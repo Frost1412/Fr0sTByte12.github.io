@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+/* Insert Font chữ */
+
+
+/* Màu nền */
+:root {
+    --maucoban-: #006241;
+    --mauxanhdam-: #1e3932;
+    --mauhong-: #e31c79;
+    --mauhongdam-: #76232f;
+    --mauhongnhat-: #b54963;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+    color: #000;
+}
+
+ul {
+    list-style:none;
+}
+img {
+    max-width: 100%;
+}
+/* Thanh nav */
+
+.navbar {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    height: 100px;
+    min-height: 72px;
+    background-color: white(64, 25, 238);
+}
+.navbar-hold {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    max-width: 1440px;
+    margin: auto;
+    background-color: white ;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar li {
+    font-size:medium;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: var(--maucoban-);
+}
+.navbar-logo img {
+    width: 50px;
+    height: 50px;
+    min-width: 40px;
+    min-height: 40px;
+}
+.navbar-phiatrai {
+    flex: auto;
+    margin-left: 0%; 
+    padding: 0;
+}
+.navbar-phiaphai li:first-child a{
+    display: flex;
+    align-items: center;
+}
+.navbar-phiaphai img {
+    height: 20px;
+    width:  20px;
+    margin-right: 10px;
+}
+
+/* các ô */
+.box {
+    margin-bottom: 32px;
+}
+
+.box-o1 {
+    margin-top: 34px;
+
+} 
+
+
+.box-text {
+    max-width: 500px;
+    text-align: center;
+    justify-self: center;
+    padding: 20px 0;
+}
+.box-text .btn {
+    margin-top: 20px;
+}
+
+/* Căn lề */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-reverse :first-child {
+    order: 2;
+}
+
+/* Các nút bấm */
+.btn {
+    display: inline-block;
+    background-color: none;
+    border: 1px black solid;
+    border-radius: 40px;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.trongtrangngoaiden {
+    border-color: black;
+    color: black;
+    background-color: white;
+}
+
+.nutdenxi {
+    background-color: black;
+    color: white;
+}
+.nutdenxi:hover {
+    background-color: #333;
+}
+.nutvientrang {
+    border-color: white;
+    color: white;
+}
+.trongtrangngoaiden:hover,
+.nutvientrang:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+/* Đoạn này thử hover cái nút sign in nma k được vì nhìn nó vẫn v lmao */
+.navbar-phiaphai li:nth-child(2) {
+    margin: 0 5px;
+}
+
+/* Nội dung phụ cho các ô bên dưới */
+.nen-coban {
+    background-color: var(--maucoban-);
+    color: white;
+}
+.nen-xanhdam {
+    background-color: var(--mauxanhdam-);
+    color: white;
+}
+.nen-hong {
+    background-color: var(--mauhong-);
+    color: white;
+}
+.nen-hongdam {
+    background-color: var(--mauhongdam-);
+    color: white;
+}
+.nen-hongnhat {
+    background-color: var(--mauhongnhat-);
+    color: white;
+}
+
+/* Text style */
+.text-center {
+    text-align: center;
+}
+.chuto {
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+.chubinhthuong {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.chunho {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.end-text {
+    width: 70vw;
+    margin: auto;
+    font-size: 15px;
+    text-align: center;
+    max-width: 700px;
+}
+.divider {
+    width: 77.5%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 40px auto;
+
+}
+
+.divider-nav {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin: -13px 0 25px 0;
+}
+
+/* Footer */
+.footer-contain {
+    max-width: 1440px;
+    /* Đoạn này chưa chỉnh được cái icon cho có responsive */
+    margin-left:  180px;
+    margin: auto;
+    padding: 0 30px 30px ;
+    width: 100%;
+}
+
+
+
+.truyenthong {
+display: flex;
+align-items: center;
+margin: auto;
+    
+}
+.truyenthong img {
+    gap: 30px;
+    height: 35px;
+    width: 35px;
+    margin-right: 16px;
+    margin-bottom: 20px;
+    
+}
+
+.svg {
+    transition: .3s all;
+    /* border-radius: 50%; */
+}
+
+.svg:hover {
+    transform: scale(0.7);
+    /* background-color: #006241;border-radius: 50%; */
+    /* width: ; */
+    
+    
+}
+
+.truyenthong a {
+    text-decoration: none;
+    
+}
+#credits {
+    font-size: 15px;
+    color: #6b6b6b;
+    opacity: 100%;
+}
+
+
+
+
+
+.column {
+    flex: 1;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.column h2 {
+    text-align: center;
+}
+
+.content {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+/* Phần xem thêm */
+.Xem-them {
+    margin-left: 30px;
+    
+    
+    margin-top: 10px;
+    max-width: 1440px;
+    text-decoration: none;
+    }
+
+ul{
+    list-style: none;
+
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Xem-them li{
+    text-decoration: none;
+    margin-top: 30px;
+}
+.Xem-them a{
+    text-decoration: none;
+    color: #6b6b6b   ;
+    /* transition: ; */
+    /* transition: 0.2s all; */
+
+}    
+
+.Xem-them h6{
+    font-size: 20px;
+    color: #212121;
+    height: auto;
+}    
+
+.Xem-them a:hover {
+    color: black;
+    transition-duration: 1s;
+}
+
+/* End of the line  */
+.footer-end {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+
+.footer-end ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+   
+    
+}
+.footer-end a{
+    color: black;
+    height: auto;
+    text-decoration: none;
+    /* font-weight: normal; */
+
+    /* max-width: 768px; */
+   
+}
+
+.footer-end a:hover {
+    text-decoration: underline;
+    color: var(--maucoban-);
+}
+
+.end-text a{
+    color: pink;
+}
+.lmao {
+    margin-bottom: 30px ;
+}
+
+/* .O-chon a{
+    
+  display: flex;
+} */
+.O-chon {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 35px;
+    width: 100%;
+    height: 51px;
+    background-color: #f9f9f9;
+    padding-left: 15vw;
+    
+    
+}
+.O-chon a{
+    color: black;
+    text-decoration: none;
+    font-size:15px ;
+}
+#tuanhoang {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+
+}
+
+#hoangtuan {
+    /* margin-left: 15%; */
+    margin-top: 62px;
+    /* margin-right: 256.5px; */
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    /* background-color: #006241; */
+}
+
+.cot-trai {
+    width: 20vw;
+}
+
+.cot-trai a{
+    display: flex;
+    /* gap: 100px; */
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+    /* background-color: pink; */
+    width: 150px;
+}
+
+
+.cot-trai h3{
+    margin-top: 30px;
+}
+
+.cot-phai {
+    /* padding: 23px 100px 100px  ; */
+    /* margin: auto; */
+    width: 50vw;
+    /* background-color: #006241; */
+}
+.cot-phai h1{
+    padding: 0 0 48px;
+}
+.cot-phai hr{
+    width: 100%;
+    color: gray;
+    /* border: none; */
+}
+/* Thử */
+
+
+.menus img{
+    max-height: 115px;
+    max-width: 115px;
+ 
+}
+.menus  {
+    display: flex;
+    justify-content: space-between;
+}
+/* .menus-column2{
+    padding-left: 300px;
+} */
+.single-menu{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px ;
+}
+.menu-content{
+    margin-left: 20px;
+}
+
+.menus img:hover{
+    cursor: pointer;
+}
+.menus h4:hover{
+    cursor: pointer;
+}
+
+
+
+@media(max-width: 768px) {
+    #hoangtuan{
+        width: 90vw;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        margin-left :30px;
+    }
+    #hoangtuan h1{
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+    #hoangtuan h2{
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .grid-reverse :first-child {
+        order: 0;
+    }
+    .navbar .navbar-phiaphai, 
+    .navbar .navbar-phiatrai {
+        display: none;
+    }
+    .Xem-them {
+        width: 100%;
+        margin-bottom: 30px;
+        
+    }
+    .cot-phai{
+        width: 100vw;
+
+        display:flex;
+        flex-direction: column;
+    
+    }
+    /* .menus-column2{
+        width: 100%;
+    
+    } */
+    .menus-column{
+        width: 100%;
+        /* flex-direction: column; */
+    }
+    
+    .menus{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menus img{
+        width: 80px;
+        height: 80px;
+    }
+    .O-chon{
+        margin: 0;
+        padding: 0  30px;
+    }
+
+
+    
+    .footer-end ul{
+        flex-direction: column;
+    }
+    .Xem-them li{
+        font-size: small;
+    }
+    .end-text {
+        display: none;
+    }
+
+    .drinks img{
+        height: 200px;
+        width: 200px;
+    }
+ .cot-trai{
+    display: none;
+ }
+ 
+}
+
+@media (max-width: 960px) {
+    .chuto {
+        font-size:  25px;
+    }
+    .chubinhthuong {
+        font-size: 19px;
+    }
+    .footer-end a{
+        grid-template-columns: 1fr;
+    }
+    
+
+   
+
+}
+@media(min-width: 1440px) {
+    .box {
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
