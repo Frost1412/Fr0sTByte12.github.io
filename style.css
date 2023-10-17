@@ -465,6 +465,11 @@ ul{
     align-items: center;
     padding-bottom: 30px ;
 }
+
+.single-menu img{
+    border-radius: 50%;
+}
+
 .menu-content{
     margin-left: 20px;
 }
@@ -478,9 +483,10 @@ ul{
 
 
 
+
 @media(max-width: 768px) {
     #hoangtuan{
-        width: 90vw;
+        width: 90%;
         height: 100%;
         display: flex;
         justify-content: flex-start;
