@@ -481,6 +481,10 @@ ul{
     cursor: pointer;
 }
 
+.do-bong {
+    border-bottom: 4px solid green !important;
+    padding-bottom: 35px;
+}
 
 
 
@@ -568,6 +572,12 @@ ul{
     display: none;
  }
  
+ .do-bong {
+    border-bottom: 4px solid green !important;
+    padding-bottom: 35px;
+}
+
+
 }
 
 @media (max-width: 960px) {
@@ -581,7 +591,11 @@ ul{
         grid-template-columns: 1fr;
     }
     
-
+    .do-bong {
+        border-bottom: 4px solid green !important;
+        padding-bottom: 35px;
+    }
+    
    
 
 }
@@ -591,4 +605,11 @@ ul{
         margin-right: auto;
         margin-left: auto;
     }
+
+
+    .do-bong {
+        border-bottom: 4px solid green !important;
+        padding-bottom: 35px;
+    }
+        
 }
