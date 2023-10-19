@@ -665,6 +665,8 @@ ul{
     .O-chon{
         margin: 0;
         padding: 0  30px;
+        width: 100%;
+        overflow-x: auto;
     }
 
 
