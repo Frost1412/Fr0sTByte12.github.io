@@ -38,7 +38,7 @@ img {
     padding: 20px;
     height: 100px;
     min-height: 72px;
-    background-color: white(64, 25, 238);
+    background-color: white;
     position: relative;
 }
 .navbar-hold {
@@ -126,7 +126,7 @@ img {
 /* Các nút bấm */
 .btn {
     display: inline-block;
-    background-color: none;
+    /* background-color: none; */
     border: 1px black solid;
     border-radius: 40px;
     padding: 7px 16px;
@@ -507,9 +507,9 @@ ul{
   }
 
   #hambuler{
-    width: 250px;
+    width: 235px;
     position: absolute;
-    height: 80vh;
+    height: 50vh;
     right: 0%;
     background-color: white;
     top: 101px;
@@ -519,7 +519,7 @@ ul{
 
   #hambuler h3{
     padding: 10px 20px;
-    font-weight: 180;
+    font-weight: 190;
   }
 
   #hambuler hr{
@@ -538,7 +538,11 @@ ul{
     border-radius: 15px;
     border: black solid 1px;
     font-size: 15px;
+    color: black;
+    background-color: white;
   }
+
+  
 
   #nut-join{
     padding: 5px 15px;
@@ -587,8 +591,8 @@ ul{
 @media(max-width: 768px) {
     
     #dau-ba-gach{
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         border-radius: 100%;
         display: flex;
         padding: 5px;
