@@ -24,9 +24,9 @@ body {
     color: #000;
 }
 
-ul {
+/* ul {
     list-style:none;
-}
+} */
 img {
     max-width: 100%;
 }
@@ -596,21 +596,28 @@ ul{
   }
 
   .back-ground{
-    position: relative;
-  }
-  .back-ground img{
+    /* position: relative; */
+    margin-top: 50px;
     width: 100%;
     height: 805px;
     border: white;
     position: relative;
-    margin-top: 50px;
-}
+    background-color: #d0eae4;
+    
+  }
+ 
 
   .phan-tren {
     position: absolute;
     color: black;
-    margin-top: -432px;  
-    margin-left: 15vw;
+    left: 0%;
+    top: 30%;
+    left: 15%;
+  }
+
+  .phan-tren h2{
+    width: 250px;
+    font-size: 30px;
   }
 
   .Join-now-xanh{
@@ -624,20 +631,42 @@ ul{
   }
 
   #non{
-    width: 100%;
     margin: 0 auto;
-    justify-content: center;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-  }
-  #non h2{
-    
-    margin-left: 40vw;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
   }
 
-  #non p{
-    margin-left: 38vw;
+  #cuc-3{
+    display: flex;
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 1500px;
+    gap: 50px;
+    padding-bottom: 200px;
   }
+
+  #cuc-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    width: 100vw;
+    max-width: 500px;
+  }
+
+  #cuc-1 p{
+    text-align: center;
+  }
+
+  #cuc-1 img{
+    width: 50px;
+    height: 50px;
+  }
+
+  
 
 
   
@@ -659,7 +688,42 @@ ul{
 
 
 @media(max-width: 768px) {
-    
+  
+    .phan-tren{
+        display: flex;
+        flex-direction: column;
+        top: 10%;
+        align-items: center;   
+        width: 100%;  
+        left: 0%;   
+    }
+
+    .phan-tren h2{
+        text-align: center;
+        font-size: larger;
+    }
+
+
+
+    .back-ground{
+        height: 450px;
+    }
+
+
+    .O-chon2{
+        padding: 0;
+        margin: 0;
+    }
+   
+   
+   
+    #cuc-3{
+        flex-direction: column;
+        
+    }
+
+
+
     #dau-ba-gach{
         width: 35px;
         height: 35px;
