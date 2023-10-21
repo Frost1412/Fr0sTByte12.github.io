@@ -593,6 +593,7 @@ ul{
     font-weight: 800;
     font-size: 13px;
     text-decoration: none;
+
   }
 
   .back-ground{
@@ -613,6 +614,9 @@ ul{
     left: 0%;
     top: 30%;
     left: 15%;
+  }
+  .phan-tren a{
+    color:black;
   }
 
   .phan-tren h2{
@@ -655,6 +659,10 @@ ul{
     row-gap: 20px;
     width: 100vw;
     max-width: 500px;
+  }
+
+  #cuc-1 a{
+    color: var(--maucoban-);
   }
 
   #cuc-1 p{
