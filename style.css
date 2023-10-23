@@ -534,9 +534,8 @@ ul{
     gap: 17px;
     padding: 10px 20px;
   }
-  #nut-sign{
-    padding: 5px 15px;
-    border-radius: 15px;
+  .nut-sign{
+    
     border: black solid 1px;
     font-size: 15px;
     color: black;
@@ -545,9 +544,8 @@ ul{
 
   
 
-  #nut-join{
-    padding: 5px 15px;
-    border-radius: 15px;
+  .nut-join{
+    
     border: black solid 1px;
     background-color: black;
     color: white;
