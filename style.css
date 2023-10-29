@@ -300,13 +300,13 @@ margin: auto;
 }
 /* Phần xem thêm */
 .Xem-them {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     
     
     margin-top: 10px;
     max-width: 1440px;
     text-decoration: none;
-    }
+}
 
 ul{
     list-style: none;
@@ -316,6 +316,8 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 100px;
+    padding: 30px;
 }
 .Xem-them li{
     text-decoration: none;
@@ -747,6 +749,9 @@ ul{
         margin: 0 auto;
     }
     
+    .row {
+        gap: 0px;
+    }
     
     
     #hoangtuan{
@@ -754,8 +759,8 @@ ul{
         height: 100%;
         display: flex;
         justify-content: flex-start;
-        padding: 0;
-        margin-left :30px;
+        padding: 0px;
+        /* margin-left :30px; */
     }
     #hoangtuan h1{
         font-size: 25px;
@@ -781,8 +786,8 @@ ul{
         
     }
     .cot-phai{
-        width: 100vw;
-
+        width: 90vw;
+        margin: 0 auto;
         display:flex;
         flex-direction: column;
     
@@ -837,10 +842,10 @@ ul{
  .do-bong {
     border-bottom: 4px solid green !important;
     padding-bottom: 35px;
-}
-
 
 }
+}
+
 
 @media (max-width: 960px) {
     .chuto {
@@ -857,6 +862,21 @@ ul{
         border-bottom: 4px solid green !important;
         padding-bottom: 35px;
     }
+    .Xem-them {
+        width: 300px;
+    }
+    .cot-trai {
+        display: none;
+    }
+    #hoangtuan {
+        width: 100vw;
+        padding: 0px;
+
+    }
+    .cot-phai {
+        width: 90vw;
+    }
+    
     
    
 
